@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background-color:#2d0adb;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+}
+
+.grid, div {
+
+    padding: 15px;
+    /*  init grid */
+    display: grid;
+    /* create column and row template */
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    /* gutter specificiation */
+    grid-gap: 20px;
+}
+
+.grid > div {
+    background-color: #800ae7;
+    border: #ea9a06 solid 2px;
+    border-radius: 5px;
+}
+
+.grid .header {
+    grid-row: 1 ; 
+    grid-column: 1 / -1;
+
+}
+
+.small-box-1 {
+    grid-row: 2;
+    grid-column:  1 / 2.5 ;
+
+}
+
+.small-box-2 {
+    grid-row: 2;
+    grid-column: 2 / 4;
+
+}
+
+.small-box-3 {
+    grid-row: 2;
+    grid-column: 4 / 6;
+
+}
+
+.sidebar {
+    grid-row: 2 / 6;
+    grid-column: 6 / -1;
+
+}
+
+.main-content {
+    grid-row: 3  / 6;
+    grid-column: 1 / 6 ;
+
+}
+
+.footer {
+    grid-row: 6;
+    grid-column: 1 / -1;
+
+}
